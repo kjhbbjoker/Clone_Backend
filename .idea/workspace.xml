@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="34540875-ac13-458c-b272-3fa10ab66db5" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/dto/SignupRequestDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/dto/UserInfoDto.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/FilterSkipMatcher.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/FormLoginSuccessHandler.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/UserDetailsImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/UserDetailsServiceImpl.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/WebSecurityConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/filter/FormLoginFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/filter/JwtAuthFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/jwt/HeaderTokenExtractor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/jwt/JwtDecoder.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/jwt/JwtPreProcessingToken.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/jwt/JwtTokenUtils.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/provider/FormLoginAuthProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/provider/JWTAuthProvider.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/service/ValidateChecker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectClone/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectClone/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/controller/UserController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/model/User.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/projectclone/ProjectCloneApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/projectclone/ProjectCloneApplication.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/repository/UserRepository.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/service/UserService.java" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ExternalProjectsData">
+    <projectState path="$PROJECT_DIR$/ProjectClone">
+      <ProjectState />
+    </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="25H7Iq0qiFQe4Um5qfKiwiIlVdF" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ProjectClone/src/main/java/com/example" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\whdg1\Desktop\Clone_Backend\ProjectClone\src\main\java\com\example" />
+    </key>
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.example.security" />
+      <recent name="com.example.dto" />
+      <recent name="com.example.service" />
+    </key>
+  </component>
+  <component name="RunManager">
+    <configuration name="ProjectCloneApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ProjectClone.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.projectclone.ProjectCloneApplication" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="34540875-ac13-458c-b272-3fa10ab66db5" name="Changes" comment="" />
+      <created>1645172106953</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1645172106953</updated>
+      <workItem from="1645172117473" duration="5167000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+</project>
