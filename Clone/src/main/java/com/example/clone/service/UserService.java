@@ -37,9 +37,12 @@ public class UserService {
             throw new IllegalArgumentException("중복된 사용자 닉네임이 존재합니다.");
         }
 
-        String password = passwordEncoder.encode(requestDto.getPassword());
+        String address = requestDto.getAddress(); // 주소 저장
 
-        User user = new User(username, password, nickname);
+
+        String password = passwordEncoder.encode(requestDto.getPassword());//비번 인코딩
+
+        User user = new User(username, password, nickname, address);
         userRepository.save(user);
     }
 }

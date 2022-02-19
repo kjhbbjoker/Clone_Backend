@@ -24,13 +24,23 @@ public class User {
     @Column(nullable = false, unique = true)
     private String nickname;
 
+    @Column(nullable = false)
+    private String address;
+
+    @Column(columnDefinition = "varchar(255) default 'default.img'")
+    private String profileImage;
 
 
-    public User(String username, String password, String nickname) {
+
+
+
+    public User(String username, String password, String nickname, String address) {
 
         this.username = username;
         this.password = password;
         this.nickname = nickname;
+        this.address = address;
+
     }
 
 }

@@ -5,34 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="34540875-ac13-458c-b272-3fa10ab66db5" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/jarRepositories.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/dto/SignupRequestDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/dto/UserInfoDto.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/FilterSkipMatcher.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/FormLoginSuccessHandler.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/UserDetailsImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/UserDetailsServiceImpl.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/WebSecurityConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/filter/FormLoginFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/filter/JwtAuthFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/jwt/HeaderTokenExtractor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/jwt/JwtDecoder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/jwt/JwtPreProcessingToken.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/jwt/JwtTokenUtils.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/provider/FormLoginAuthProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/security/provider/JWTAuthProvider.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/service/ValidateChecker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectClone/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectClone/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/controller/UserController.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/controller/UserController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/model/User.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/projectclone/ProjectCloneApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/projectclone/ProjectCloneApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/repository/UserRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/repository/UserRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/service/UserService.java" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectClone/src/main/java/com/example/service/UserService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -106,6 +80,7 @@
       <option name="presentableId" value="Default" />
       <updated>1645172106953</updated>
       <workItem from="1645172117473" duration="5167000" />
+      <workItem from="1645200525212" duration="1062000" />
     </task>
     <servers />
   </component>

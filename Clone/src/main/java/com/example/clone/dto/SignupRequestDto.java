@@ -16,8 +16,8 @@ import javax.validation.constraints.Pattern;
 @ToString
 @NoArgsConstructor
 public class SignupRequestDto {
-    @NotBlank(message = "이메일을 입력해주세요.")
-    @Email
+
+    @NotBlank(message = "아이디를 입력해주세요.")
     private String username;
 
     @NotBlank(message = "비밀번호를 입력해주세요.")
@@ -29,5 +29,8 @@ public class SignupRequestDto {
 
     @NotNull
     private String nickname;
+
+    private String address;
+
 
 }
