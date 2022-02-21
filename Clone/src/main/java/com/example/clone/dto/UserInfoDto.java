@@ -14,6 +14,7 @@ public class UserInfoDto {
     String nickname;
     String profileImage;
     String address;
+    Long rate;
 
 
 

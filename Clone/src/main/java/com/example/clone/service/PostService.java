@@ -1,9 +1,7 @@
 package com.example.clone.service;
 
 
-import com.example.clone.dto.PostGetResponse;
-import com.example.clone.dto.PostRequestDto;
-import com.example.clone.dto.PostsResponseDto;
+import com.example.clone.dto.*;
 import com.example.clone.model.Post;
 import com.example.clone.model.User;
 import com.example.clone.repository.PostRepository;
@@ -12,7 +10,7 @@ import com.example.clone.security.UserDetailsImpl;
 import lombok.RequiredArgsConstructor;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Service;
-import com.example.clone.dto.Response;
+
 import javax.transaction.Transactional;
 import java.util.List;
 
@@ -27,7 +25,7 @@ public class PostService {
 
 
     //생성
-    @Transactional
+    /*@Transactional
     public Response savePost(PostRequestDto postRequestDto, @AuthenticationPrincipal UserDetailsImpl userDetailsImpl) {
     //public Response savePost(PostRequestDto postRequestDto) {
     //public PostResponseDto savePost(PostRequestDto postRequestDto) {
@@ -47,6 +45,15 @@ public class PostService {
 
         return response;
         //return postResponseDto;
+    }*/
+
+
+    //글 작성
+    public Long writePost(PostsRequestDto requestDto, User user) {
+
+        Post post = new Post(requestDto, user);
+
+        return postRepository.save(post).getPostId();
     }
 
     //삭제
@@ -71,7 +78,7 @@ public class PostService {
     }
 
     //수정
-    @Transactional
+   @Transactional
     public Response updatePost(Long postId, PostRequestDto postRequestDto) {
         Post getPost = postRepository.findById(postId).orElseThrow(
                 ()-> new IllegalArgumentException("존재하지 않는 포스트입니다.") );
@@ -83,6 +90,7 @@ public class PostService {
         return response;
     }
 
+
     public List<Post> getPostList(){
 
 
@@ -91,6 +99,25 @@ public class PostService {
         //return commentRepository.findAllByOrderByCreatedAtDesc();
         return postRepository.findAllByOrderByCreatedAtDesc();
 
+    }
+
+    public PostsResponseDto getdetails(Long postId) {
+        Post post = postRepository.findById(postId).orElseThrow(
+                () -> new NullPointerException("해당 게시물이 존재하지 않습니다.")
+        );
+
+        return new PostsResponseDto(
+                postId,
+                post.getContent(),
+                post.getPrice(),
+                post.getCategory(),
+                post.getCreatedAt(),
+                post.getTitle(),
+                post.getImage(),
+                post.getLikeCnt(),
+                post.getViewCnt(),
+                post.getUser()
+        );
     }
 
 

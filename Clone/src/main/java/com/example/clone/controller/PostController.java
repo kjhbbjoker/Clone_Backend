@@ -1,9 +1,7 @@
 package com.example.clone.controller;
 
 
-import com.example.clone.dto.PostGetResponse;
-import com.example.clone.dto.PostRequestDto;
-import com.example.clone.dto.Response;
+import com.example.clone.dto.*;
 import com.example.clone.model.Post;
 import com.example.clone.security.UserDetailsImpl;
 import com.example.clone.service.PostService;
@@ -28,13 +26,20 @@ public class PostController {
 
 
     //상세페이지
-    @GetMapping("post/{postId}")//하나 골라서 상세정보
+    /*@GetMapping("post/{postId}")//하나 골라서 상세정보
     public PostGetResponse getPostOne(@PathVariable Long postId, @AuthenticationPrincipal UserDetailsImpl userDetailsImpl)
     //public Post getPostOne(@PathVariable Long postId)
     //public Post getPostOne(@PathVariable Long postId)
     {
         return postService.getPostOne(postId, userDetailsImpl);
         //return postService.getPostOne(postId);
+    }*/
+
+
+    @GetMapping("/post/{postId}")
+    public PostsResponseDto getDetails(@PathVariable Long postId) {
+
+        return postService.getdetails(postId);
     }
 
 //    @GetMapping("/post/{postId}")
@@ -44,7 +49,7 @@ public class PostController {
 //    }
 
     //저장
-    @PostMapping("post")
+   /* @PostMapping("post")
     public Response savePost(@RequestBody PostRequestDto postRequestDto, @AuthenticationPrincipal UserDetailsImpl userDetailsImpl) {
     //public Response savePost(@RequestBody PostRequestDto postRequestDto) {
     //public PostResponseDto savePost(@RequestBody PostRequestDto postRequestDto) {
@@ -52,7 +57,17 @@ public class PostController {
        return postService.savePost(postRequestDto, userDetailsImpl);
        // return postService.savePost(postRequestDto);
 
+    }*/
+    @PostMapping("/post")
+    public Long writePost(@RequestBody PostsRequestDto requestDto,
+                            @AuthenticationPrincipal UserDetailsImpl userDetails) {
+        System.out.println(requestDto.getContent());
+        return postService.writePost(requestDto, userDetails.getUser());
     }
+
+
+
+
 
     //삭제
     @DeleteMapping("post/{postId}")

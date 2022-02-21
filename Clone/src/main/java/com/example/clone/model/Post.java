@@ -1,6 +1,7 @@
 package com.example.clone.model;
 
 import com.example.clone.dto.PostRequestDto;
+import com.example.clone.dto.PostsRequestDto;
 import com.example.clone.dto.PostsResponseDto;
 import lombok.*;
 
@@ -31,9 +32,8 @@ public class Post extends Timestamped {
     @Column(nullable = false)
     private float price;//가격
 
-    @JoinColumn(name = "category_id")
-    @ManyToOne
-    private Category category;
+    @Column(nullable = false)
+    private String category;
 
     @JoinColumn(name = "user_id")
     @ManyToOne
@@ -54,6 +54,10 @@ public class Post extends Timestamped {
 
     @Column(nullable = false)
     private int likeCnt = 0;//조회수
+
+
+    @Column(columnDefinition = "varchar(255) default 'default.img'")
+    private String image;
 //작성날짜는 안넣어도 알아서 컬럼으로 들어감
 
 //이 아래로는 연관관계,유저 id 로 연관관계시키는거랑 유저 엔테티그자체 넘겨주는거 골라서 쓰기
@@ -112,6 +116,17 @@ public class Post extends Timestamped {
 
 
 
+    }
+
+
+
+    public Post(PostsRequestDto requestDto, User user) {
+        this.title = requestDto.getTitle();
+        this.content = requestDto.getContent();
+        this.price = requestDto.getPrice();
+        this.category = requestDto.getCategory();
+        this.image = requestDto.getImage();
+        this.user = user;
     }
 }
 

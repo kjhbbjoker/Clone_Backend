@@ -27,6 +27,10 @@ public class User {
     @Column(nullable = false)
     private String address;
 
+    @Column
+    private Long rate;
+
+
     @Column(columnDefinition = "varchar(255) default 'default.img'")
     private String profileImage;
 
@@ -38,7 +42,6 @@ public class User {
         this.password = password;
         this.nickname = nickname;
         this.address = address;
-
     }
 
 

@@ -1,10 +1,12 @@
 package com.example.clone.dto;
 
+import com.example.clone.model.User;
 import lombok.AllArgsConstructor;
 import lombok.Data;
 import lombok.Setter;
 
 import java.time.LocalDateTime;
+
 
 @Data
 @AllArgsConstructor
@@ -24,5 +26,8 @@ public class PostsResponseDto {
     private int likeCnt;
 
     private LocalDateTime createdAt;
+
+
+
 
 }

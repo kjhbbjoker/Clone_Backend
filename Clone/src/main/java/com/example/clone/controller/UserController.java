@@ -57,13 +57,16 @@ public class UserController {
         String nickname = userDetails.getUser().getNickname();
         String profileImage = userDetails.getUser().getProfileImage();
         String address = userDetails.getUser().getAddress();
+        Long rate = userDetails.getUser().getRate();
 
 
 
         ResponseEntity.ok()
                 .body("로그인 성공했씁니다아아아아아");
 
-        return new UserInfoDto(username, nickname,profileImage,address);
+        return new UserInfoDto(username, nickname,profileImage,address, rate);
+
+
     }
 
 }
