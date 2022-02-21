@@ -22,14 +22,11 @@ repositories {
 dependencies {
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-web'
-    implementation 'org.springframework.boot:spring-boot-starter-websocket'
-    implementation 'org.symphonyoss.symphony:messageml:0.9.85'
     compileOnly 'org.projectlombok:lombok'
     runtimeOnly 'com.h2database:h2'
     runtimeOnly 'mysql:mysql-connector-java'
     annotationProcessor 'org.projectlombok:lombok'
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
-    compileOnly 'org.springframework.cloud:spring-cloud-starter-aws:2.0.1.RELEASE'
 
     implementation 'org.springframework.boot:spring-boot-starter-security'
 
@@ -42,18 +39,6 @@ dependencies {
     implementation 'io.jsonwebtoken:jjwt-impl:0.11.2'
     implementation 'io.jsonwebtoken:jjwt-jackson:0.11.2'
     implementation 'com.auth0:java-jwt:3.13.0'
-    // WebSocket
-    implementation 'org.springframework.boot:spring-boot-starter-websocket'
-
-    // Stomp
-    implementation 'org.webjars:stomp-websocket:2.3.3-1'
-
-    //Sockjs
-    implementation 'org.webjars:sockjs-client:1.1.2'
-    implementation "org.jetbrains.kotlin:kotlin-stdlib-jdk8"
-    implementation 'com.amazonaws:aws-java-sdk-s3:1.11.475'
-    implementation 'com.amazonaws:aws-java-sdk-secretsmanager:1.11.339'
-    implementation 'com.amazonaws:aws-encryption-sdk-java:1.6.0'
 }
 
 tasks.named('test') {

@@ -32,8 +32,6 @@ public class User {
 
 
 
-
-
     public User(String username, String password, String nickname, String address) {
 
         this.username = username;

@@ -46,7 +46,7 @@ public class UserController {
         userService.registerUser(requestDto);
         System.out.println("회원가입 완료");
         return ResponseEntity.ok()
-                .body("회원가입 완료");
+                .body("회원가입 성공했습니다아아앙아아아ㅏ ");
     }
 
     // 로그인 여부 확인
@@ -60,12 +60,9 @@ public class UserController {
 
 
 
-
-
-
-
         ResponseEntity.ok()
-                .body("true");
+                .body("로그인 성공했씁니다아아아아아");
+
         return new UserInfoDto(username, nickname,profileImage,address);
     }
 
