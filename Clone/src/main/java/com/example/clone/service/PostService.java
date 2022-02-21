@@ -57,7 +57,7 @@ public class PostService {
     }
 
     //삭제
-    public Response deletePost(Long postId, @AuthenticationPrincipal UserDetailsImpl userDetailsImpl)
+   /* public Response deletePost(Long postId, @AuthenticationPrincipal UserDetailsImpl userDetailsImpl)
     //public Response deletePost(Long postId)
     //public PostResponseDto deletePost(Long postId)
     {
@@ -75,19 +75,42 @@ public class PostService {
 
         return response;
         //return postResponseDto;
+    }*/
+
+    @Transactional
+    public boolean deletePost(Long id) {
+        Post post = postRepository.findById(id).orElseThrow(
+                () -> new IllegalArgumentException("댓글이 존재하지 않습니다.")
+        );
+        postRepository.delete(post);
+        return true;
     }
 
+
+
     //수정
-   @Transactional
-    public Response updatePost(Long postId, PostRequestDto postRequestDto) {
+   /*@Transactional
+    public Response updatePost(Long postId, PostsRequestDto postsRequestDto) {
         Post getPost = postRepository.findById(postId).orElseThrow(
                 ()-> new IllegalArgumentException("존재하지 않는 포스트입니다.") );
-        getPost.update(postRequestDto);
+        getPost.update(postsRequestDto);
 
         Response response = new Response();
         response.setStatus(200);
 
         return response;
+    }*/
+
+
+    @Transactional
+    public void editpost(PostsRequestDto postsRequestDto, Long postId) {
+//        Posts posts = new Posts(requestDto, user);
+
+        Post post = postRepository.findById(postId).orElseThrow(
+                () -> new NullPointerException("해당 게시물이 존재하지 않습니다.")
+        );
+        //post.update(requestDto.getContent(),requestDto.getTitle(),requestDto.getCategory(),requestDto.getImage(),requestDto.getPrice(),post.getUser());
+        post.update(postsRequestDto.getTitle(),postsRequestDto.getImage(),postsRequestDto.getPrice(),postsRequestDto.getContent(),postsRequestDto.getCategory(),post.getUser());
     }
 
 

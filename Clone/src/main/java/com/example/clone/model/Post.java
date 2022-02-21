@@ -96,12 +96,14 @@ public class Post extends Timestamped {
 
     }
 
-    public void update(PostRequestDto postRequestDto)
+    public void update(String title, String image, float price, String content, String category, User user)
     {
-        this.title = postRequestDto.getTitle();
-        this.content = postRequestDto.getContent();
-        this.price = postRequestDto.getPrice();
-
+        this.title = title;
+        this.image= image;
+        this.price= price;
+        this.content=content;
+        this.category=category;
+        this.user= user;
 
     }
 

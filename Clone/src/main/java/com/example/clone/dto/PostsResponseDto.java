@@ -27,7 +27,22 @@ public class PostsResponseDto {
 
     private LocalDateTime createdAt;
 
+    private  String category;
+
+    private String image;
+    User user;
 
 
-
+    public PostsResponseDto(Long postId, String content, float price, String category, LocalDateTime createdAt, String title, String image, int likeCnt, int viewCnt, User userinfo) {
+        this.postId = postId;
+        this.content =content;
+        this.price = price;
+        this.category = category;
+        this.createdAt = createdAt;
+        this.title = title;
+        this.likeCnt = likeCnt;
+        this.viewCnt= viewCnt;
+        this.image= image;
+        this.user = userinfo;
+    }
 }

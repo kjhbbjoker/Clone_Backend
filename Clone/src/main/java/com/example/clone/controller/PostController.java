@@ -70,24 +70,27 @@ public class PostController {
 
 
     //삭제
-    @DeleteMapping("post/{postId}")
+   /* @DeleteMapping("post/{postId}")
     public Response deletePost(@PathVariable Long postId,@AuthenticationPrincipal UserDetailsImpl userDetailsImpl)
     //public Response deletePost(@PathVariable Long postId)
     //public PostResponseDto deletePost(@PathVariable Long postId)
     {
         return postService.deletePost(postId, userDetailsImpl);
         //return postService.deletePost(postId);
-    }
+    }*/
 
     //수정
-    @PutMapping("/post/{postId}")
-    public Response updatePost(@PathVariable Long postId, @RequestBody PostRequestDto postRequestDto) {
+    @PutMapping("post/{postId}")
+    public void editpost(@PathVariable Long postId,
+                           @RequestBody PostsRequestDto requestDto) {
+        postService.editpost(requestDto,postId);
+    }
 
-        //postService.updatePost(postId, postRequestDto);
 
-        return postService.updatePost(postId,postRequestDto);
 
-        //return new PostResponseDto(HttpStatus.OK.value(), "댓글이 수정되었습니다.", null);
+    @DeleteMapping("post/{postId}")
+    public boolean deletePost(@PathVariable Long postId) {
+        return postService.deletePost(postId);
     }
 
 
