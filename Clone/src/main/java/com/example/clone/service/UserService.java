@@ -1,6 +1,7 @@
 package com.example.clone.service;
 
 import com.example.clone.dto.SignupRequestDto;
+import com.example.clone.dto.UserInfoDto;
 import com.example.clone.model.User;
 import com.example.clone.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -8,6 +9,7 @@ import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.stereotype.Service;
 
 
+import javax.transaction.Transactional;
 import java.util.Optional;
 
 @Service
@@ -45,5 +47,14 @@ public class UserService {
         User user = new User(username, password, nickname, address);
         userRepository.save(user);
     }
+
+
+   /*@Transactional
+    public void editUser(UserInfoDto userInfoDto) {
+//        Posts posts = new Posts(requestDto, user);
+
+        User user = userRepository.findByUsername(username);
+        user.update(userInfoDto.getNickname(),userInfoDto.getAddress(),userInfoDto.getProfileImage());
+    }*/
 }
 

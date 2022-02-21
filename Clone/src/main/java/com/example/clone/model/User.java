@@ -43,4 +43,11 @@ public class User {
 
     }
 
+
+    public void update(String nickname, String address,String profileImage) {
+        this.nickname = nickname;
+        this.address = address;
+        this.profileImage=profileImage;
+    }
+
 }
