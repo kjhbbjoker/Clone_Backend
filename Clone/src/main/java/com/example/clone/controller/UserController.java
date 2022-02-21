@@ -20,6 +20,7 @@ public class UserController {
 
     private final UserService userService;
 
+
     @Autowired
     public UserController(UserService userService) {
         this.userService = userService;
@@ -57,8 +58,7 @@ public class UserController {
         String nickname = userDetails.getUser().getNickname();
         String profileImage = userDetails.getUser().getProfileImage();
         String address = userDetails.getUser().getAddress();
-        Long rate = userDetails.getUser().getRate();
-
+        float rate = userDetails.getUser().getRate();
 
 
         ResponseEntity.ok()

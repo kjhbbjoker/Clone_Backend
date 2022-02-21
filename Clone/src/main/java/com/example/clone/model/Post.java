@@ -56,7 +56,7 @@ public class Post extends Timestamped {
     private int likeCnt = 0;//조회수
 
 
-    @Column(columnDefinition = "varchar(255) default 'default.img'")
+    @Column
     private String image;
 //작성날짜는 안넣어도 알아서 컬럼으로 들어감
 

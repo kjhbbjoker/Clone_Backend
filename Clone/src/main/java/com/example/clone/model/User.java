@@ -28,11 +28,11 @@ public class User {
     private String address;
 
     @Column
-    private Long rate;
+    private float rate = 0;
 
 
-    @Column(columnDefinition = "varchar(255) default 'default.img'")
-    private String profileImage;
+    @Column
+    private String profileImage = "default.img";
 
 
 

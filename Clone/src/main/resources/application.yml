@@ -1,0 +1,11 @@
+cloud:
+  aws:
+    credentials:
+      accessKey: AKIAWSWJHSBZ77JKROYU
+      secretKey: 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
+    s3:
+      bucket: myclone
+    region:
+      static: ap-northeast-2
+    stack:
+      auto: false
