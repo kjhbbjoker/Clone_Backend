@@ -13,7 +13,7 @@ import javax.persistence.*;
 public class User {
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Id
-    private Long id;
+    private Long userId;
 
     @Column(nullable = false, unique = true)
     private String username;
@@ -45,7 +45,7 @@ public class User {
     }
 
 
-    public void update(String nickname, String address,String profileImage) {
+    public void update(String nickname, String address, String profileImage) {
         this.nickname = nickname;
         this.address = address;
         this.profileImage=profileImage;

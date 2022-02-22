@@ -66,7 +66,7 @@ public class PostController {
 
     }*/
     @PostMapping("/post")
-    public ResponseEntity<String> writePost(@RequestPart("file") MultipartFile multipartFile, PostsRequestDto requestDto,
+    public ResponseEntity<String> writePost(@RequestPart("file") MultipartFile multipartFile, @RequestPart("post") PostsRequestDto requestDto,
     @AuthenticationPrincipal UserDetailsImpl userDetails) throws IOException {
         System.out.println(requestDto.getContent());
 
@@ -95,7 +95,7 @@ public class PostController {
     //수정
     @PutMapping("post/{postId}")
     public ResponseEntity<String> editpost(@RequestPart("file") MultipartFile multipartFile, @PathVariable Long postId,
-                                           PostsRequestDto requestDto, @AuthenticationPrincipal UserDetailsImpl userDetails) throws IOException {
+                                           @RequestPart("post") PostsRequestDto requestDto, @AuthenticationPrincipal UserDetailsImpl userDetails) throws IOException {
 
         String image = s3Uploader.upload(multipartFile,"postImage");
         requestDto.setImage(image);

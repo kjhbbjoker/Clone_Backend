@@ -32,7 +32,6 @@ public class Post extends Timestamped {
     @Column(nullable = false)
     private Float price;//가격
 
-    @Column(nullable = false)
     private String category;
 
     @JoinColumn(name = "user_id")
@@ -96,7 +95,7 @@ public class Post extends Timestamped {
 
     }
 
-    public void update(String title, String image, float price, String content, String category, User user)
+    public void update(String title, String image, Float price, String content, String category, User user)
     {
         this.title = title;
         this.image= image;

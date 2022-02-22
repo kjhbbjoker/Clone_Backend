@@ -1,7 +1,7 @@
 package com.example.clone.service;
 
 import com.example.clone.dto.SignupRequestDto;
-import com.example.clone.dto.UserInfoDto;
+import com.example.clone.dto.UserRequestDto;
 import com.example.clone.model.User;
 import com.example.clone.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -46,6 +46,18 @@ public class UserService {
 
         User user = new User(username, password, nickname, address);
         userRepository.save(user);
+    }
+
+
+    @Transactional
+    public void editUser(UserRequestDto userRequestDto, Long userId, User user) {
+//        Posts posts = new Posts(requestDto, user);
+
+
+        User user1 = userRepository.findById(userId).orElseThrow(
+                () -> new NullPointerException("해당 유저는 없습니다.")
+        );
+        user1.update(userRequestDto.getNickname(),userRequestDto.getProfileImage(),userRequestDto.getNickname());
     }
 
 
