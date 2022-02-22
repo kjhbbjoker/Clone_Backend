@@ -1,5 +1,6 @@
 package com.example.clone.service;
 
+import com.example.clone.dto.LikeUserDto;
 import com.example.clone.model.Post;
 import com.example.clone.repository.PostRepository;
 import com.example.clone.dto.LikeRequestDto;
@@ -13,6 +14,7 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
 import java.util.Optional;
 
@@ -55,6 +57,19 @@ public class LikeService {
 
             return likesCheck.toDto(false, likesList.size());
         }
+    }
+
+    public LikeUserDto getLike (Long postId) {
+        LikeUserDto dto = new LikeUserDto();
+        Post post = postRepository.findById(postId).get();
+        List <Likes> likesList = likeRepository.findAllByPost(post);
+        List <User> users = new ArrayList<>();
+        for (Likes item : likesList) {
+            users.add(item.getUser());
+        }
+
+        dto.setUsers(users);
+        return dto;
     }
 
 //    public Optional<Likes> getLikesList(Long postId, UserDetailsImpl userDetails){

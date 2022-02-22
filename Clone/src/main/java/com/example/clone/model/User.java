@@ -1,5 +1,7 @@
 package com.example.clone.model;
 
+import com.example.clone.dto.UpdateDto;
+import com.example.clone.dto.UserRequestDto;
 import lombok.Getter;
 import lombok.NoArgsConstructor;
 import lombok.Setter;
@@ -28,11 +30,14 @@ public class User {
     private String address;
 
     @Column
-    private float rate = 0;
+    private int rate = 0;
 
 
     @Column
     private String profileImage = "default.img";
+
+
+
 
 
 
@@ -45,10 +50,21 @@ public class User {
     }
 
 
-    public void update(String nickname, String address,String profileImage) {
-        this.nickname = nickname;
-        this.address = address;
-        this.profileImage=profileImage;
+    public void update(UpdateDto updateDto) {
+
+        this.profileImage = updateDto.getProfileImage();
+        this.nickname = updateDto.getNickname();
+        this.address = updateDto.getAddress();
     }
+
+
+    public void update(String nickname, String address , String profileImage)
+    {
+        this.nickname= nickname;
+        this.address= address;
+        this.profileImage= profileImage;
+
+    }
+
 
 }

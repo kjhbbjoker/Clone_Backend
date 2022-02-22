@@ -1,7 +1,8 @@
 package com.example.clone.service;
 
+import com.example.clone.dto.RateDto;
 import com.example.clone.dto.SignupRequestDto;
-import com.example.clone.dto.UserInfoDto;
+import com.example.clone.dto.UpdateDto;
 import com.example.clone.model.User;
 import com.example.clone.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -47,6 +48,39 @@ public class UserService {
         User user = new User(username, password, nickname, address);
         userRepository.save(user);
     }
+
+    @Transactional
+    public void edituser(UpdateDto updateDto, User user) {
+
+        user.update(updateDto.getNickname(),updateDto.getAddress(),updateDto.getProfileImage());
+        userRepository.save(user);
+    }
+
+    public RateDto addRate(RateDto rateDto){
+
+        int rate1 = rateDto.getRate();
+
+        User user = userRepository.findById(rateDto.getId()).get();
+        int currentRate = user.getRate();
+        user.setRate(currentRate + rate1);
+        User user2 = userRepository.save(user);
+
+        rateDto.setRate(user2.getRate());
+        return rateDto;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
    /*@Transactional

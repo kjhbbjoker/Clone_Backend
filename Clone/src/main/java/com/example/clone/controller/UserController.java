@@ -1,30 +1,30 @@
 package com.example.clone.controller;
 
 
-import com.example.clone.dto.SignupRequestDto;
-import com.example.clone.dto.UserInfoDto;
+import com.example.clone.config.S3Uploader;
+import com.example.clone.dto.*;
+import com.example.clone.repository.LikeRepository;
 import com.example.clone.security.UserDetailsImpl;
+import com.example.clone.service.LikeService;
 import com.example.clone.service.UserService;
-import org.springframework.beans.factory.annotation.Autowired;
+import lombok.RequiredArgsConstructor;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 
 import org.springframework.web.bind.annotation.*;
+import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
+import java.io.IOException;
 
-
-
+@RequiredArgsConstructor
 @RestController
 public class UserController {
 
     private final UserService userService;
+    private final S3Uploader s3Uploader;
+    private final LikeService likeService;
 
-
-    @Autowired
-    public UserController(UserService userService) {
-        this.userService = userService;
-    }
 
 
     // 회원 로그인 페이지
@@ -68,6 +68,33 @@ public class UserController {
 
 
     }
+
+    // 유저정보 수정.
+ @PutMapping("/myPage/myInfo")
+    public ResponseEntity<String> edituser(@RequestPart("file") MultipartFile multipartFile, @RequestPart("info") UpdateDto updateDto,
+                         @AuthenticationPrincipal UserDetailsImpl userDetails
+    ) throws IOException {
+
+     String image = s3Uploader.upload(multipartFile,"userImage");
+     updateDto.setProfileImage(image);
+     userService.edituser(updateDto,userDetails.getUser());
+        return ResponseEntity.ok()
+                .body("작성되었습니다 true");
+    }
+
+
+    @PostMapping("/rate")
+    @ResponseBody
+    public ResponseEntity<String> addRate(@RequestBody  RateDto rateDto){
+        userService.addRate(rateDto);
+        return ResponseEntity.ok()
+                .body("평점이 잘입력되었습니다 true");
+    }
+
+
+
+
+
 
 
 
