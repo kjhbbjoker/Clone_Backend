@@ -13,7 +13,7 @@ public class PostsRequestDto {
 
     private String content;
 
-    private float price;
+    private Float price;
 
     private String image;
 

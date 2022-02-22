@@ -103,7 +103,7 @@ public class PostService {
 
 
     @Transactional
-    public void editpost(PostsRequestDto postsRequestDto, Long postId) {
+    public void editpost(PostsRequestDto postsRequestDto, Long postId, User user) {
 //        Posts posts = new Posts(requestDto, user);
 
         Post post = postRepository.findById(postId).orElseThrow(

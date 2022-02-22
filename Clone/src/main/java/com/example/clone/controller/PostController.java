@@ -7,6 +7,7 @@ import com.example.clone.model.Post;
 import com.example.clone.security.UserDetailsImpl;
 import com.example.clone.service.PostService;
 import lombok.RequiredArgsConstructor;
+import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
@@ -65,13 +66,16 @@ public class PostController {
 
     }*/
     @PostMapping("/post")
-    public Long writePost(@RequestPart("image") MultipartFile multipartFile, @RequestPart("mm") PostsRequestDto requestDto,
-                          @AuthenticationPrincipal UserDetailsImpl userDetails) throws IOException {
+    public ResponseEntity<String> writePost(@RequestPart("file") MultipartFile multipartFile, PostsRequestDto requestDto,
+    @AuthenticationPrincipal UserDetailsImpl userDetails) throws IOException {
         System.out.println(requestDto.getContent());
 
-        String image = s3Uploader.upload(multipartFile, "postImage");
+       // String image = s3Uploader.upload(multipartFile, "postImage");
+        String image = s3Uploader.upload(multipartFile,"postImage");
         requestDto.setImage(image);
-        return postService.writePost(requestDto, userDetails.getUser());
+        postService.writePost(requestDto, userDetails.getUser());
+        return ResponseEntity.ok()
+                .body("작성되었습니다 true");
     }
 
 
@@ -90,16 +94,23 @@ public class PostController {
 
     //수정
     @PutMapping("post/{postId}")
-    public void editpost(@PathVariable Long postId,
-                           @RequestBody PostsRequestDto requestDto) {
-        postService.editpost(requestDto,postId);
+    public ResponseEntity<String> editpost(@RequestPart("file") MultipartFile multipartFile, @PathVariable Long postId,
+                                           PostsRequestDto requestDto, @AuthenticationPrincipal UserDetailsImpl userDetails) throws IOException {
+
+        String image = s3Uploader.upload(multipartFile,"postImage");
+        requestDto.setImage(image);
+        postService.editpost(requestDto,postId, userDetails.getUser());
+        return ResponseEntity.ok()
+                .body("수정되었습니다 true");
     }
 
 
 
     @DeleteMapping("post/{postId}")
-    public boolean deletePost(@PathVariable Long postId) {
-        return postService.deletePost(postId);
+    public ResponseEntity<String> deletePost(@PathVariable Long postId) {
+        postService.deletePost(postId);
+        return ResponseEntity.ok()
+                .body("삭제되었습니다 true");
     }
 
 

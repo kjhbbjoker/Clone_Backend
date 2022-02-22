@@ -30,7 +30,7 @@ public class Post extends Timestamped {
 //    private LocalDateTime createdAt;
 
     @Column(nullable = false)
-    private float price;//가격
+    private Float price;//가격
 
     @Column(nullable = false)
     private String category;
