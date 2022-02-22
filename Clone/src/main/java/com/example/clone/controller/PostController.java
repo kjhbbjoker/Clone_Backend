@@ -67,16 +67,17 @@ public class PostController {
     }*/
     @PostMapping("/post")
     public ResponseEntity<String> writePost(@RequestPart("file") MultipartFile multipartFile, @RequestPart("post") PostsRequestDto requestDto,
-    @AuthenticationPrincipal UserDetailsImpl userDetails) throws IOException {
+                                            @AuthenticationPrincipal UserDetailsImpl userDetails) throws IOException {
         System.out.println(requestDto.getContent());
 
-       // String image = s3Uploader.upload(multipartFile, "postImage");
+        // String image = s3Uploader.upload(multipartFile, "postImage");
         String image = s3Uploader.upload(multipartFile,"postImage");
         requestDto.setImage(image);
         postService.writePost(requestDto, userDetails.getUser());
         return ResponseEntity.ok()
                 .body("작성되었습니다 true");
     }
+
 
 
 
@@ -95,7 +96,7 @@ public class PostController {
     //수정
     @PutMapping("post/{postId}")
     public ResponseEntity<String> editpost(@RequestPart("file") MultipartFile multipartFile, @PathVariable Long postId,
-                                           @RequestPart("post") PostsRequestDto requestDto, @AuthenticationPrincipal UserDetailsImpl userDetails) throws IOException {
+                                           @RequestPart("post")PostsRequestDto requestDto, @AuthenticationPrincipal UserDetailsImpl userDetails) throws IOException {
 
         String image = s3Uploader.upload(multipartFile,"postImage");
         requestDto.setImage(image);

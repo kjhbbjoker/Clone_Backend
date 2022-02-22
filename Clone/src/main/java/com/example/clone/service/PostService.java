@@ -53,6 +53,7 @@ public class PostService {
 
         Post post = new Post(requestDto, user);
 
+
         return postRepository.save(post).getPostId();
     }
 

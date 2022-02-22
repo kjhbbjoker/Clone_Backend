@@ -1,30 +1,30 @@
 package com.example.clone.controller;
 
 
-import com.example.clone.config.S3Uploader;
-import com.example.clone.dto.PostsRequestDto;
 import com.example.clone.dto.SignupRequestDto;
 import com.example.clone.dto.UserInfoDto;
-import com.example.clone.dto.UserRequestDto;
 import com.example.clone.security.UserDetailsImpl;
 import com.example.clone.service.UserService;
-import lombok.RequiredArgsConstructor;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.security.core.annotation.AuthenticationPrincipal;
 
 import org.springframework.web.bind.annotation.*;
-import org.springframework.web.multipart.MultipartFile;
 
 import javax.validation.Valid;
-import java.io.IOException;
 
-@RequiredArgsConstructor
+
+
 @RestController
 public class UserController {
 
     private final UserService userService;
-    private final S3Uploader s3Uploader;
+
+
+    @Autowired
+    public UserController(UserService userService) {
+        this.userService = userService;
+    }
 
 
     // 회원 로그인 페이지
@@ -67,17 +67,6 @@ public class UserController {
         return new UserInfoDto(username, nickname,profileImage,address, rate);
 
 
-    }
-
-    @PutMapping("user/{userId}")
-    public ResponseEntity<String>editUser(@RequestPart("file") MultipartFile multipartFile,@PathVariable Long userId,
-                                          @RequestPart("user") UserRequestDto userRequestDto, @AuthenticationPrincipal UserDetailsImpl userDetails) throws IOException {
-
-        String image = s3Uploader.upload(multipartFile,"userImage");
-        userRequestDto.setProfileImage(image);
-        userService.editUser(userRequestDto,userId, userDetails.getUser());
-        return ResponseEntity.ok()
-                .body("수정되었습니다 true");
     }
 
 

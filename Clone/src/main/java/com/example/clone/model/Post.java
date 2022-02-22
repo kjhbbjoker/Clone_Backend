@@ -32,7 +32,13 @@ public class Post extends Timestamped {
     @Column(nullable = false)
     private Float price;//가격
 
+    @Column(nullable = false)
     private String category;
+
+    @Column private String consumer;//구입자
+
+    @Column
+    private boolean state = false;//판매여부
 
     @JoinColumn(name = "user_id")
     @ManyToOne
@@ -95,7 +101,7 @@ public class Post extends Timestamped {
 
     }
 
-    public void update(String title, String image, Float price, String content, String category, User user)
+    public void update(String title, String image, float price, String content, String category, User user)
     {
         this.title = title;
         this.image= image;
