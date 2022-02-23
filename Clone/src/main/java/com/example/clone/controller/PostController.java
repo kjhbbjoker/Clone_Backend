@@ -94,7 +94,7 @@ public class PostController {
     }*/
 
     //수정
-    @PutMapping("post/{postId}")
+    @PatchMapping("post/{postId}")
     public ResponseEntity<String> editpost(@RequestPart("file") MultipartFile multipartFile, @PathVariable Long postId,
                                            @RequestPart("post")PostsRequestDto requestDto, @AuthenticationPrincipal UserDetailsImpl userDetails) throws IOException {
 
@@ -107,6 +107,7 @@ public class PostController {
 
 
 
+    //삭제
     @DeleteMapping("post/{postId}")
     public ResponseEntity<String> deletePost(@PathVariable Long postId) {
         postService.deletePost(postId);

@@ -70,7 +70,7 @@ public class UserController {
     }
 
     // 유저정보 수정.
- @PutMapping("/myPage/myInfo")
+ @PatchMapping("/myPage/myInfo")
     public ResponseEntity<String> edituser(@RequestPart("file") MultipartFile multipartFile, @RequestPart("info") UpdateDto updateDto,
                          @AuthenticationPrincipal UserDetailsImpl userDetails
     ) throws IOException {
