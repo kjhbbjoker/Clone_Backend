@@ -9,12 +9,12 @@ import lombok.Setter;
 @AllArgsConstructor
 public class UserInfoDto {
 
-
+    Long id;
     String username;
     String nickname;
     String profileImage;
     String address;
-    float rate;
+    int rate;
 
 
 

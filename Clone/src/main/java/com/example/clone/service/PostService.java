@@ -2,8 +2,10 @@ package com.example.clone.service;
 
 
 import com.example.clone.dto.*;
+import com.example.clone.model.Likes;
 import com.example.clone.model.Post;
 import com.example.clone.model.User;
+import com.example.clone.repository.LikeRepository;
 import com.example.clone.repository.PostRepository;
 import com.example.clone.repository.UserRepository;
 import com.example.clone.security.UserDetailsImpl;
@@ -12,6 +14,7 @@ import org.springframework.security.core.annotation.AuthenticationPrincipal;
 import org.springframework.stereotype.Service;
 
 import javax.transaction.Transactional;
+import java.util.ArrayList;
 import java.util.List;
 
 @RequiredArgsConstructor
@@ -21,6 +24,8 @@ public class PostService {
     private final PostRepository postRepository;
 
     private final UserRepository userRepository;
+
+    private final LikeRepository likeRepository;
 
 
     //생성
@@ -207,5 +212,20 @@ public class PostService {
         return response;
 
 
+    }
+
+
+    public LikePostDto getLikeList (User user) { //좋아요한 게시글 목록
+        Long userId = user.getId();
+        LikePostDto dto = new LikePostDto();
+        User users = userRepository.findById(userId).get();
+        List <Likes> likesList = likeRepository.findAllByUser(users);
+        List <Post> posts = new ArrayList<>();
+        for (Likes item : likesList) {
+            posts.add(item.getPost());
+        }
+
+        dto.setPosts(posts);
+        return dto;
     }
 }

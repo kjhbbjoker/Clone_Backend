@@ -3,9 +3,12 @@ package com.example.clone.model;
 import com.example.clone.dto.PostRequestDto;
 import com.example.clone.dto.PostsRequestDto;
 import com.example.clone.dto.PostsResponseDto;
+import com.fasterxml.jackson.annotation.JsonIgnore;
 import lombok.*;
 
 import javax.persistence.*;
+import java.util.ArrayList;
+import java.util.List;
 
 
 @Builder
@@ -44,7 +47,14 @@ public class Post extends Timestamped {
     @ManyToOne
     private User user;
 
-//
+
+
+    @JsonIgnore
+    @OneToMany(cascade = CascadeType.REMOVE, mappedBy = "post")
+    private List<Likes> LikesList  = new ArrayList<>();
+
+
+//a
 //    @Column(nullable = true)
 //    private String consumer;//구입자
 //

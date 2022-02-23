@@ -24,7 +24,9 @@ public class Likes {
     @JoinColumn
     private User user;
 
-    @ManyToOne(fetch = FetchType.LAZY)
+
+
+    @ManyToOne
     @JoinColumn
     private Post post;
 

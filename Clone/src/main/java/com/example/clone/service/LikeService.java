@@ -1,5 +1,6 @@
 package com.example.clone.service;
 
+import com.example.clone.dto.LikePostDto;
 import com.example.clone.dto.LikeUserDto;
 import com.example.clone.model.Post;
 import com.example.clone.repository.PostRepository;
@@ -73,6 +74,10 @@ public class LikeService {
         dto.setUsers(users);
         return dto;
     }
+
+
+
+
 
 //    public Optional<Likes> getLikesList(Long postId, UserDetailsImpl userDetails){
 //

@@ -54,17 +54,18 @@ public class UserController {
     @GetMapping("/user")
     @ResponseBody
     public UserInfoDto getUserInfo(@AuthenticationPrincipal UserDetailsImpl userDetails) {
+        Long id = userDetails.getUser().getId();
         String username = userDetails.getUser().getUsername();
         String nickname = userDetails.getUser().getNickname();
         String profileImage = userDetails.getUser().getProfileImage();
         String address = userDetails.getUser().getAddress();
-        float rate = userDetails.getUser().getRate();
+        int rate = userDetails.getUser().getRate();
 
 
         ResponseEntity.ok()
                 .body("로그인 성공했씁니다아아아아아");
 
-        return new UserInfoDto(username, nickname,profileImage,address, rate);
+        return new UserInfoDto(id, username, nickname,profileImage,address, rate);
 
 
     }
