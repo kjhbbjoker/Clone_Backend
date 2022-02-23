@@ -30,7 +30,7 @@ public class User {
     private String address;
 
     @Column
-    private int rate = 0;
+    private int rate = 36;
 
 
     @Column

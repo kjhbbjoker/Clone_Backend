@@ -3,7 +3,6 @@ package com.example.clone.controller;
 
 import com.example.clone.config.S3Uploader;
 import com.example.clone.dto.*;
-import com.example.clone.repository.LikeRepository;
 import com.example.clone.security.UserDetailsImpl;
 import com.example.clone.service.LikeService;
 import com.example.clone.service.UserService;
@@ -86,10 +85,9 @@ public class UserController {
 
     @PostMapping("/rate")
     @ResponseBody
-    public ResponseEntity<String> addRate(@RequestBody  RateDto rateDto){
-        userService.addRate(rateDto);
-        return ResponseEntity.ok()
-                .body("평점이 잘입력되었습니다 true");
+    public RatedDto addRate(@RequestBody  RateDto rateDto){
+        return  userService.addRate(rateDto);
+
     }
 
 

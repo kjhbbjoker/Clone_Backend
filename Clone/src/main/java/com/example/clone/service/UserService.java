@@ -1,9 +1,12 @@
 package com.example.clone.service;
 
 import com.example.clone.dto.RateDto;
+import com.example.clone.dto.RatedDto;
 import com.example.clone.dto.SignupRequestDto;
 import com.example.clone.dto.UpdateDto;
+import com.example.clone.model.Post;
 import com.example.clone.model.User;
+import com.example.clone.repository.PostRepository;
 import com.example.clone.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.security.crypto.password.PasswordEncoder;
@@ -18,10 +21,14 @@ public class UserService {
     private final PasswordEncoder passwordEncoder;
     private final UserRepository userRepository;
 
+    private final PostRepository postRepository;
+
+
     @Autowired
-    public UserService(UserRepository userRepository, PasswordEncoder passwordEncoder) {
+    public UserService(UserRepository userRepository, PasswordEncoder passwordEncoder, PostRepository postRepository) {
         this.userRepository = userRepository;
         this.passwordEncoder = passwordEncoder;
+        this.postRepository = postRepository;
     }
 
     public void registerUser(SignupRequestDto requestDto) {
@@ -56,17 +63,23 @@ public class UserService {
         userRepository.save(user);
     }
 
-    public RateDto addRate(RateDto rateDto){
+    public RatedDto addRate(RateDto rateDto){ //유저 평가하기
+
+        RatedDto ratedDto = new RatedDto();
+        Post post = postRepository.findById(rateDto.getPostId()).get();
+        post.setRated(true);
+
 
         int rate1 = rateDto.getRate();
-
-        User user = userRepository.findById(rateDto.getId()).get();
+        User user = userRepository.findById(rateDto.getId()).get();  //평가 점수 더하는 로직
         int currentRate = user.getRate();
         user.setRate(currentRate + rate1);
         User user2 = userRepository.save(user);
 
+
         rateDto.setRate(user2.getRate());
-        return rateDto;
+        ratedDto.setRated(true);
+        return ratedDto;
     }
 
 

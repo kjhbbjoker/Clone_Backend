@@ -43,6 +43,10 @@ public class Post extends Timestamped {
     @Column
     private boolean state = false;//판매여부
 
+    @Column
+    private boolean rated = false;//평가여부
+
+
     @JoinColumn(name = "user_id")
     @ManyToOne
     private User user;
