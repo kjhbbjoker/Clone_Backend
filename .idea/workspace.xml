@@ -4,67 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b505b4d7-b37f-4af9-afd4-5207639606c4" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.gitattributes" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
+    <list default="true" id="34540875-ac13-458c-b272-3fa10ab66db5" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/CloneApplication.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/config/AmazonS3Config.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/config/CORSFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/config/S3Uploader.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/config/WebConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/controller/LikeController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/controller/PostController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/controller/UserController.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/dto/LikeRequestDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/dto/LikeResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/dto/LikeUserDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/dto/PostGetResponse.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/dto/PostGetResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/dto/PostRequestDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/dto/PostsRequestDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/dto/PostsResponseDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/dto/RateDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/dto/Response.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/dto/SignupRequestDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/dto/UpdateDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/dto/UserInfoDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/dto/UserRequestDto.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/model/Likes.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/model/Post.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/model/Timestamped.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/model/User.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/repository/LikeRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/repository/PostRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/repository/UserRepository.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/security/FilterSkipMatcher.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/security/FormLoginSuccessHandler.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/security/UserDetailsImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/security/UserDetailsServiceImpl.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/security/WebSecurityConfig.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/security/filter/FormLoginFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/security/filter/JwtAuthFilter.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/security/jwt/HeaderTokenExtractor.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/security/jwt/JwtDecoder.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/security/jwt/JwtPreProcessingToken.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/security/jwt/JwtTokenUtils.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/security/provider/FormLoginAuthProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/security/provider/JWTAuthProvider.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/service/LikeService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/service/PostService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/service/UserService.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/java/com/example/clone/service/ValidateChecker.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/resources/META-INF/additional-spring-configuration-metadata.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/resources/application.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/main/resources/application.yml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Clone/src/test/java/com/example/clone/CloneApplicationTests.java" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,143 +14,88 @@
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
   <component name="ExternalProjectsData">
-    <projectState path="$PROJECT_DIR$">
+    <projectState path="$PROJECT_DIR$/ProjectClone">
       <ProjectState />
     </projectState>
   </component>
   <component name="ExternalProjectsManager">
     <system id="GRADLE">
       <state>
-        <task path="$PROJECT_DIR$">
-          <activation />
-        </task>
         <projects_view>
           <tree_state>
-            <expand>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Clone" type="f1a62948:ProjectNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Clone" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-              </path>
-              <path>
-                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
-                <item name="Clone" type="f1a62948:ProjectNode" />
-                <item name="Tasks" type="e4a08cd1:TasksNode" />
-                <item name="build" type="c8890929:TasksNode$1" />
-              </path>
-            </expand>
+            <expand />
             <select />
           </tree_state>
         </projects_view>
       </state>
     </system>
   </component>
-  <component name="FileTemplateManagerImpl">
-    <option name="RECENT_TEMPLATES">
-      <list>
-        <option value="Class" />
-      </list>
-    </option>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="GitSEFilterConfiguration">
-    <file-type-list>
-      <filtered-out-file-type name="LOCAL_BRANCH" />
-      <filtered-out-file-type name="REMOTE_BRANCH" />
-      <filtered-out-file-type name="TAG" />
-      <filtered-out-file-type name="COMMIT_BY_MESSAGE" />
-    </file-type-list>
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="25SAS6pk9DPSZmjKttkzCLIEmLA" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="25H7Iq0qiFQe4Um5qfKiwiIlVdF" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
-    <property name="DatabaseDriversLRU" value="mysql" />
-    <property name="RequestMappingsPanelOrder0" value="0" />
-    <property name="RequestMappingsPanelOrder1" value="1" />
-    <property name="RequestMappingsPanelWidth0" value="75" />
-    <property name="RequestMappingsPanelWidth1" value="75" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/ProjectClone/src/main/java/com/example" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
-    <property name="project.structure.last.edited" value="Project" />
-    <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
-    <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\whdg1\Desktop\Clone_Backend\ProjectClone\src\main\java\com\example" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="com.example.clone.dto" />
+      <recent name="com.example.security" />
+      <recent name="com.example.dto" />
+      <recent name="com.example.service" />
     </key>
   </component>
-  <component name="RunManager" selected="Spring Boot.CloneApplication">
-    <configuration name="Clone [build]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
-      <ExternalSystemSettings>
-        <option name="executionName" />
-        <option name="externalProjectPath" value="$PROJECT_DIR$" />
-        <option name="externalSystemIdString" value="GRADLE" />
-        <option name="scriptParameters" />
-        <option name="taskDescriptions">
-          <list />
-        </option>
-        <option name="taskNames">
-          <list>
-            <option value="build" />
-          </list>
-        </option>
-        <option name="vmOptions" />
-      </ExternalSystemSettings>
-      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
-      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <DebugAllEnabled>false</DebugAllEnabled>
-      <method v="2" />
-    </configuration>
-    <configuration name="CloneApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
-      <module name="Clone.main" />
-      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.clone.CloneApplication" />
+  <component name="RunManager">
+    <configuration name="ProjectCloneApplication" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
+      <module name="ProjectClone.main" />
+      <option name="SPRING_BOOT_MAIN_CLASS" value="com.example.projectclone.ProjectCloneApplication" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <recent_temporary>
-      <list>
-        <item itemvalue="Gradle.Clone [build]" />
-      </list>
-    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="b505b4d7-b37f-4af9-afd4-5207639606c4" name="Changes" comment="" />
-      <created>1645510120060</created>
+      <changelist id="34540875-ac13-458c-b272-3fa10ab66db5" name="Changes" comment="" />
+      <created>1645172106953</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1645510120060</updated>
-      <workItem from="1645510123855" duration="1958000" />
-      <workItem from="1645512283429" duration="2067000" />
-      <workItem from="1645514773883" duration="23629000" />
-      <workItem from="1645542907849" duration="383000" />
-      <workItem from="1645576123174" duration="636000" />
+      <updated>1645172106953</updated>
+      <workItem from="1645172117473" duration="5167000" />
+      <workItem from="1645200525212" duration="1062000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
   </component>
 </project>
