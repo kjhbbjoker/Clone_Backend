@@ -44,7 +44,7 @@ https://www.notion.so/8-Clone-Coding-e23b83af71d744b492a8771ee301d9cd
 ![엔티티 연관관계](https://user-images.githubusercontent.com/97422693/155443917-e63eed67-005d-44ce-91ce-b55b86913f6a.PNG)
 
 
-## 🏷 API Table
+## 🏷 페이지 구현하려던 와이어프레임
 <details>
  <summary>자세히 보기</summary>
  <div markdown="1">
