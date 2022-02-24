@@ -4,15 +4,19 @@
 
 
 
-## 🤷 프로젝트 소개 
+ 
+ 
+ ## 🤷 프로젝트 소개 
  <p> 당근마켓 클론 코딩입니다. </p>
  <p> </p>
  <p> </p>
  <p> </p>
+  
+[당근마켓!] http://jeonhaekang.shop.s3-website.ap-northeast-2.amazonaws.com
+</br>
 
 <img src="https://user-images.githubusercontent.com/97422693/155444394-feb226b9-fdd8-4575-afaa-b179e190abc1.PNG" width="500px">
 
-[당근마켓!] http://jeonhaekang.shop.s3-website.ap-northeast-2.amazonaws.com
 
 #### 프론트 - [전해강](https://github.com/YJ-my),[유영탁](https://github.com/YJ-my)
 #### 백 - [김채경](https://github.com/howCanIFind),[김종훈](https://github.com/kjhbbjoker)
