@@ -109,20 +109,24 @@ https://www.notion.so/8-Clone-Coding-e23b83af71d744b492a8771ee301d9cd
    
    
    
-   
-     <details>
- <summary>마이 페이지</summary>
+    <details>
+ <summary>후기 페이지</summary>
  <div markdown="1">
 
 
 <p align="center"float="left">
  
-  <img src="https://user-images.githubusercontent.com/97422693/155450763-81e9e9cc-5773-42a0-b2b8-f9ddb4c21458.png" width="600" />
+  <img src="https://user-images.githubusercontent.com/97422693/155450915-fc151c8b-4d42-488e-9a9a-e101023eacde.png" width="600" />
   
 </p>
 
  
 </details>
+   
+   
+  
+   
+
 
 
 
