@@ -31,6 +31,26 @@
 ### API 설계서
 https://www.notion.so/8-Clone-Coding-e23b83af71d744b492a8771ee301d9cd
 
+## 사용 기술
+
+ <p> </p>
+ <p> </p>
+ <p> </p>
+<code> Back-end </code> 
+</br>
+<p float="left">
+<img src="https://img.shields.io/badge/JAVA-007396?style=for-the-badge&logo=java&logoColor=white">
+<img src="https://img.shields.io/badge/Springboot-6DB33F?style=for-the-badge&logo=Springboot&logoColor=white">
+<img src="https://img.shields.io/badge/SpringSecurity-6DB33F?style=for-the-badge&logo=Spring&logoColor=white">
+<img src="https://img.shields.io/badge/mysql-4479A1?style=for-the-badge&logo=mysql&logoColor=white">
+<img src="https://img.shields.io/badge/amazonaws-232F3E?style=for-the-badge&logo=amazonaws&logoColor=white"> 
+ </br>
+<img src="https://img.shields.io/badge/Gradle-02303A?style=for-the-badge&logo=Gradle&logoColor=white"> 
+<img src="https://img.shields.io/badge/JWT-232F3E?style=for-the-badge&logo=Jwt&logoColor=white"> 
+<img src="https://img.shields.io/badge/CORS-231F20?style=for-the-badge&logo=Cors&logoColor=white"> 
+<img src="https://img.shields.io/badge/FileZilla-BF0000?style=for-the-badge&logo=FileZilla&logoColor=white"> 
+</p>
+
 
 
 
