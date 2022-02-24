@@ -1,4 +1,4 @@
-# 항해99 클론코딩 8조 - 당근마켓📮
+# 항해99 클론코딩 8조 - 당근마켓
 
 <img src="https://user-images.githubusercontent.com/97422693/155444394-feb226b9-fdd8-4575-afaa-b179e190abc1.PNG" width="500px">
 
