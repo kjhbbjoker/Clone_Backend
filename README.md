@@ -1,7 +1,7 @@
 # 항해99 클론코딩 8조 - 당근마켓📮
 - 당근마켓을 클론 코딩 하였습니다!
-<img width="129" alt="스크린샷 2022-02-17 오전 10 34 11" src="![캡처](https://user-images.githubusercontent.com/97422693/155441143-64ff918f-d02b-482a-9cb0-11afad899c0c.PNG)
-">
+![캡처](https://user-images.githubusercontent.com/97422693/155443992-7f8f1e88-bec8-4da2-a417-7b7c3dc91f9c.PNG)
+
 
 [당근마켓!] http://jeonhaekang.shop.s3-website.ap-northeast-2.amazonaws.com
 
@@ -16,7 +16,8 @@ https://www.notion.so/8-Clone-Coding-e23b83af71d744b492a8771ee301d9cd
 
 
 ### Entity Relatuonship Diagram
-<img src="![엔티티 연관관계](https://user-images.githubusercontent.com/97422693/155442189-4287b37e-2f7e-4334-bc58-1bef3a43c60d.PNG)">
+
+![엔티티 연관관계](https://user-images.githubusercontent.com/97422693/155443917-e63eed67-005d-44ce-91ce-b55b86913f6a.PNG)
 
 
 
