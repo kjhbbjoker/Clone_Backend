@@ -2,7 +2,7 @@
 - 당근마켓을 클론 코딩 하였습니다!
 
 <img src="![캡처](https://user-images.githubusercontent.com/97422693/155444394-feb226b9-fdd8-4575-afaa-b179e190abc1.PNG)" width="500px">
-
+<img src="https://user-images.githubusercontent.com/97422693/155444394-feb226b9-fdd8-4575-afaa-b179e190abc1.PNG" width="500px">
 
 [당근마켓!] http://jeonhaekang.shop.s3-website.ap-northeast-2.amazonaws.com
 
