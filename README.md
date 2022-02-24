@@ -22,7 +22,7 @@
  <p> </p>
  
 
-#### 프론트 - [전해강](https://github.com/jeonhaekang/hanghae_clone_01),[유영탁](https://github.com/YJ-my)
+#### 프론트 - [전해강](https://github.com/jeonhaekang/hanghae_clone_01),[유영탁]()
 #### 백 - [김채경](https://github.com/KimCG1130/Clone_Backendd),[김종훈](https://github.com/kjhbbjoker/Clone_Backend)
 
 #### 프론트 GIT-HUB 주소 https://github.com/jeonhaekang/hanghae_clone_01
