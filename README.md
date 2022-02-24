@@ -44,6 +44,25 @@ https://www.notion.so/8-Clone-Coding-e23b83af71d744b492a8771ee301d9cd
 ![엔티티 연관관계](https://user-images.githubusercontent.com/97422693/155443917-e63eed67-005d-44ce-91ce-b55b86913f6a.PNG)
 
 
+## 🏷 API Table
+<details>
+ <summary>자세히 보기</summary>
+ <div markdown="1">
+
+
+<p align="center"float="left">
+ 
+  <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/4c5cdef3-ff38-4910-ba17-eebd40241541/Untitled.png" width="600" />
+  <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3b79bee6-c90c-4ade-a00e-6dfca8cf1579/Untitled.png" width="600" /> 
+  <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9a4675bc-6c8c-4a9d-9444-d58d989aa964/Untitled.png" width="600" />
+  <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0346fa80-fe80-4db1-8559-4cb448dfdd23/스크린샷_2022-02-18_오전_11.43.36.png" width="600" />
+  <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/96df1e3a-a4bc-44cd-808c-3de487f6242b/Untitled.png" width="600" />
+</p>
+
+ 
+</details>
+
+
 
 ## 🏷 API Table
 <details>
