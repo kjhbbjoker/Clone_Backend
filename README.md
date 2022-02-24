@@ -122,6 +122,21 @@ https://www.notion.so/8-Clone-Coding-e23b83af71d744b492a8771ee301d9cd
 
  
 </details>
+ 
+ <details>
+ <summary>작성 페이지</summary>
+ <div markdown="1">
+
+
+<p align="center"float="left">
+ 
+  <img src="https://user-images.githubusercontent.com/97422693/155451063-240711e8-1afd-4192-8560-09282cb7fda9.png" width="600" />
+  
+</p>
+
+ 
+</details>
+   
    
    
   
