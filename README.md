@@ -53,8 +53,8 @@ https://www.notion.so/8-Clone-Coding-e23b83af71d744b492a8771ee301d9cd
 
 <p align="center"float="left">
   <img src="https://user-images.githubusercontent.com/97422693/155446071-e26104d9-31df-4fe4-bfbb-5fcc41d289bd.PNG" width="600" />
-  <img src="![api설계2](https://user-images.githubusercontent.com/97422693/155446093-e2481c41-2e07-4052-b8d3-da585ac9e829.PNG)" width="600" /> 
-  <img src="![api설계3](https://user-images.githubusercontent.com/97422693/155446111-d6cffd5f-4625-4593-aeaa-c0a3b3dcde43.PNG)" width="600" />
+  <img src="https://user-images.githubusercontent.com/97422693/155446093-e2481c41-2e07-4052-b8d3-da585ac9e829.PNG" width="600" /> 
+  <img src="https://user-images.githubusercontent.com/97422693/155446111-d6cffd5f-4625-4593-aeaa-c0a3b3dcde43.PNG" width="600" />
 </p>
 
  
