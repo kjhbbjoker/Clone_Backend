@@ -52,7 +52,7 @@ https://www.notion.so/8-Clone-Coding-e23b83af71d744b492a8771ee301d9cd
 
 <p align="center"float="left">
  
-  <img src="https://www.notion.so/8-Clone-Coding-e23b83af71d744b492a8771ee301d9cd#33eba555ed6841a0a4d7c4ccaf90fa03" width="600" />
+  <img src="https://user-images.githubusercontent.com/97422693/155450373-b425a182-e903-48e6-88b6-0219ad14c374.png" width="600" />
   <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/3b79bee6-c90c-4ade-a00e-6dfca8cf1579/Untitled.png" width="600" /> 
   <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/9a4675bc-6c8c-4a9d-9444-d58d989aa964/Untitled.png" width="600" />
   <img src="https://s3-us-west-2.amazonaws.com/secure.notion-static.com/0346fa80-fe80-4db1-8559-4cb448dfdd23/스크린샷_2022-02-18_오전_11.43.36.png" width="600" />
