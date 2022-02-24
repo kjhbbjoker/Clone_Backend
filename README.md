@@ -61,7 +61,7 @@ https://www.notion.so/8-Clone-Coding-e23b83af71d744b492a8771ee301d9cd
 </details>
 
 
-## 
+##Trouble Shooting
 
  <p> </p>
  <p> </p>
@@ -146,6 +146,9 @@ public RatedDto addRate(RateDto rateDto){ //유저 평가하기
 </details>
     
     
+ 
+ 
+ 
     
 <details>
 <summary>서버 과부하 최소화를 위한 성능 최적화 작업</summary>
