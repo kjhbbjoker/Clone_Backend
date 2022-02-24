@@ -151,13 +151,15 @@ public RatedDto addRate(RateDto rateDto){ //유저 평가하기
  
     
 <details>
-<summary>서버 과부하 최소화를 위한 성능 최적화 작업</summary>
+<summary>S3 버킷 관련 ACL 관련 에러 </summary>
 <div markdown="1">
 
+ 
+ <img src="https://user-images.githubusercontent.com/97422693/155449111-a04a7db8-f8ab-4841-bf4e-edc89047e996.PNG" width="600" />
 
 
 
-..........
+
 
 </div>
 </details>
