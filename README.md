@@ -77,7 +77,7 @@ https://www.notion.so/8-Clone-Coding-e23b83af71d744b492a8771ee301d9cd
   
   
   
-   <details>
+  <details>
  <summary>디테일 페이지</summary>
  <div markdown="1">
 
@@ -109,7 +109,7 @@ https://www.notion.so/8-Clone-Coding-e23b83af71d744b492a8771ee301d9cd
    
    
    
-    <details>
+<details>
  <summary>후기 페이지</summary>
  <div markdown="1">
 
