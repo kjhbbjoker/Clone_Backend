@@ -1,6 +1,6 @@
 # 항해99 클론코딩 8조 - 당근마켓📮
 - 당근마켓을 클론 코딩 하였습니다!
-![캡처](https://user-images.githubusercontent.com/97422693/155443992-7f8f1e88-bec8-4da2-a417-7b7c3dc91f9c.PNG)
+![캡처](https://user-images.githubusercontent.com/97422693/155443992-7f8f1e88-bec8-4da2-a417-7b7c3dc91f9c.PNG  width="500px")
 
 
 [당근마켓!] http://jeonhaekang.shop.s3-website.ap-northeast-2.amazonaws.com
