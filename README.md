@@ -169,7 +169,7 @@ https://www.notion.so/8-Clone-Coding-e23b83af71d744b492a8771ee301d9cd
 
 
 <details>
-<summary>프론트측으로 MultipartFile과 JSON으로 보낼때 문제 발생 </summary>
+<summary>MultipartFile과 JSON으로 보낼때 프론트측에 제대로 데이터가 안가는 문제</summary>
 <div markdown="1">
 
 ```java
@@ -216,7 +216,7 @@ cascade = CascadeType.REMOVE 를 이용하여 해결
 
 
 <details>
-<summary>거래를 한 상대에게 무한정으로 후기를 남길 수 있음</summary>
+<summary>거래를 한 상대에게 무한정으로 후기를 남길수 있는 문제</summary>
 <div markdown="1">
 
 ```java
