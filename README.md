@@ -18,6 +18,12 @@
 </br>
 
 
+ ## 팀원 소개
+ <p> </p>
+ <p> </p>
+ <p> </p>
+ 
+
 #### 프론트 - [전해강](https://github.com/YJ-my),[유영탁](https://github.com/YJ-my)
 #### 백 - [김채경](https://github.com/howCanIFind),[김종훈](https://github.com/kjhbbjoker)
 
