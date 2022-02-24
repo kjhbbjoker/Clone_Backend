@@ -158,7 +158,7 @@ public RatedDto addRate(RateDto rateDto){ //유저 평가하기
  <img src="https://user-images.githubusercontent.com/97422693/155449111-a04a7db8-f8ab-4841-bf4e-edc89047e996.PNG" width="600" />
 
 
-
+AWS에 들어가서 객체 소유권에 대한  ACL 활성화를 해주었다 
 
 
 </div>
