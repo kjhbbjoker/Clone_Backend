@@ -51,28 +51,11 @@ https://www.notion.so/8-Clone-Coding-e23b83af71d744b492a8771ee301d9cd
 
 
 <p align="center"float="left">
-  <img src="https://user-images.githubusercontent.com/90129613/146339824-1a6ab044-a7f5-4738-a3f2-f99bced644d5.png" width="600" />
-  <img src="https://user-images.githubusercontent.com/90129613/146339833-a2246d8e-73e2-4f22-a4a9-bcf762897f07.png" width="600" /> 
-  <img src="https://user-images.githubusercontent.com/90129613/146339840-b15bf4e0-4b26-4020-97b2-56f8c215aee8.png" width="600" />
+  <img src="![api설계1](https://user-images.githubusercontent.com/97422693/155446071-e26104d9-31df-4fe4-bfbb-5fcc41d289bd.PNG)" width="600" />
+  <img src="![api설계2](https://user-images.githubusercontent.com/97422693/155446093-e2481c41-2e07-4052-b8d3-da585ac9e829.PNG)" width="600" /> 
+  <img src="![api설계3](https://user-images.githubusercontent.com/97422693/155446111-d6cffd5f-4625-4593-aeaa-c0a3b3dcde43.PNG)" width="600" />
 </p>
 
-<!-- |기능|Method|URL|Request|Response|
-|:-----:|:----:|----|----|----|
-|로그인 요청|POST|/user/login|{username: "iamuser",</br>password: "1234"}| |
-|회원</br>가입|POST|/api/signup|{username:"iamuser"</br>,"password:"1234"</br>,passwordCheck:"1234"}||
-|아이디 중복 검사|POST|/api/idCheck|{username:"iamuser"}|{result:false}|
-|로그인 여부</br>확인|GET|/api/islogin||{userInfo:{username:"username"}</br>}|
-|로그아웃|GET|/api/logout|||
-|사진</br>업로드|POST|/api/images||{imageUrl:"/images/cancle.png"}|
-|게시글 작성|POST|/api/posts|{title:"제목입니다",</br>content:"반가워요",</br>imageUrl:"/images/cancle.png"}||
-|게시글 수정|PUT|/api/posts/{postId}|{content:"반갑습니다"}||
-|게시글 삭제|DELETE||||
-|랜덤</br>게시글 조회|GET|/api/posts||{postId:1,</br>title:"제목",</br>content:"글내용",</br>comments:[{</br>commentId:1,</br>comment:"댓글내용",</br>createdAt:LocalDateTime}]</br>}|
-|내가</br>작성한 게시글 조회|GET|/api/comments/{postId}||{postId:1,</br>title:"제목",</br>content:"글내용",</br>comments:[{</br>commentId:1,</br>comment:"댓글내용",</br>createdAt:LocalDateTime},</br>{commentId:2,</br>comment:"댓글내용2",</br>createdAt:LocalDateTime}]</br>}|
-|내가</br> 댓글을 작성한 게시글 조회|GET|/api/comments/{commentId}||{postId:1,</br>title:"제목",</br>content:"글내용",</br>comments:[{</br>commentId:1,</br>comment:"댓글내용",</br>createdAt:LocalDateTime},</br>{commentId:2,</br>comment:"댓글내용2",</br>createdAt:LocalDateTime}]</br>}|
-|댓글</br> 작성|POST|/api/comments/{postId}|{comment:"댓글"}||
-|피드</br>페이지|GET|/api/feeds||[myPosts:[{</br>postId:1</br>title:"제목",</br>content:"내용",},</br>{postId:2,</br>title:"제목2",</br>content"내용2"}],</br>myComments:[{</br>commentId:1,</br>comment:"댓글",</br>createdAt:LocalDateTime},</br>{commentId:2,</br>comment:"댓글2",</br>createdAt:LocaldateTime}]</br>]|
- -->
  
 </details>
 
